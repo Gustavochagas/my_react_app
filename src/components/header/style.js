@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const HeaderStyles = createGlobalStyle`
   header {
     background: #fff;
-    width: 15%;
+    width: 290px;
     height: 100%;
     position: fixed;
     transition: all .2s ease-in-out;
