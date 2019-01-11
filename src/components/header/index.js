@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from "react-router-dom";
 
 import 'font-awesome/css/font-awesome.css';
 
@@ -26,7 +27,6 @@ class Header extends Component {
                         <li><a href=" "><i className="fa fa-github"></i> <span>Dashboard</span></a></li>
                         <li className="active"><a href=" "><i className="fa fa-user-circle"></i> <span>About</span></a></li>
                         <li><a href=" "><i className="fa fa-address-book"></i> <span>Test</span></a></li>
-                        <li><a href=" "><i className="fa fa-money"></i> <span>Buy</span></a></li>
                         <li><a href=" "><i className="fa fa-phone"></i> <span>Contact</span></a></li>
                     </ul>
 

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Routes from './routes';
 
 import Header from './components/header';
 import Dashboard from './components/dashboard';
@@ -9,7 +10,7 @@ const App = () => (
   <Fragment>
     <GlobalStyles />
     <Header />
-    <Dashboard />
+    <Routes />
   </Fragment>
 );
 

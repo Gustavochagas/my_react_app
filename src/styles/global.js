@@ -48,6 +48,19 @@ const GlobalStyles = createGlobalStyle`
       opacity: .2;
     }
   }
+  .btn-default {
+    background: #2871ff;
+    padding: 8px 30px;
+    border: 0px solid;
+    border-radius: 5px;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
 `;
 
 export default GlobalStyles;
