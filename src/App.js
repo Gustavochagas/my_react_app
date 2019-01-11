@@ -1,17 +1,22 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
 import Routes from './routes';
 
+import firebase from './firebase.js';
+
 import Header from './components/header';
-import Dashboard from './components/dashboard';
 
 import GlobalStyles from './styles/global';
 
-const App = () => (
-  <Fragment>
-    <GlobalStyles />
-    <Header />
-    <Routes />
-  </Fragment>
-);
+class App extends Component {
+  render() {
+    return (
+      <Fragment>
+      <GlobalStyles />
+      <Header />
+      <Routes />
+    </Fragment>
+    )
+  }
+}
 
 export default App;
