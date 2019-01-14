@@ -24,6 +24,32 @@ const LoginStyles = createGlobalStyle`
       margin-bottom: 5px;
       font-size: 14px;
     }
+
+    div {
+      position: relative;
+      padding: .75rem 1.25rem;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      margin-top: 20px;
+    }
+
+    div.error {
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+    }
+
+    div.logado {
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+    }
+
+    div.loading {
+      color: #004085;
+      background-color: #cce5ff;
+      border-color: #b8daff;
+    }
   }
 `;
 
