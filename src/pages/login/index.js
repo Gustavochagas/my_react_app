@@ -52,9 +52,12 @@ class LoginPage extends Component {
                     message: 'Invalid E-mail',
                     messageDiv: 'error'
                 })
+            } else {
+                me.setState( {
+                    message: 'E-mail or Password Wrong',
+                    messageDiv: 'error'
+                })
             }
-
-            console.log(error);
         });
     }
 
