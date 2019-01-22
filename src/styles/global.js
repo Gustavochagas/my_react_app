@@ -62,13 +62,17 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   input {
-      background: #fff;
-      padding: 8px 20px;
-      border-radius: 5px;
-      border: 1px solid rgba(0,0,0,0.2);
-      width: 100%;
-      margin-bottom: 10px;
-    }
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  input.messageError {
+    border: 1px solid red;
+  }
 
   label {
     display: block;
@@ -80,6 +84,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
   .col-md-4 {
     width: 33.3333%;
