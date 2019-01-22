@@ -7,19 +7,9 @@ import PrivateRoute from './PrivateRoute';
 
 import Dashboard from './components/dashboard';
 import LoginPage from './pages/login';
-
-// const Routes = () => (
-//     <BrowserRouter>
-//         <Switch>
-//              <Route exact path="/" component={LoginPage}/>
-//              <Route path="/dashboard" component={Dashboard}/>
-//              <Route path="/login" component={LoginPage}/>
-//         </Switch>
-//     </BrowserRouter>
-// );
+import todosPage from './pages/todos';
 
 const Routes = props => {
-    var user = firebase.auth().currentUser;
     let userLogged = '';
     firebase.auth().onAuthStateChanged(function(user) {
        userLogged = user;
@@ -27,12 +17,13 @@ const Routes = props => {
 
     return <BrowserRouter>
                 <Switch>
-                <Route path="/login" render={() => (
-                    userLogged !== null ?
-                    <Redirect to="/" />
-                    : <LoginPage />
-                )} />
-                <PrivateRoute path='/' auth={userLogged} component={Dashboard} />
+                    <Route path="/login" render={() => (
+                        userLogged !== null ?
+                        <Redirect to="/" />
+                        : <LoginPage />
+                    )} />
+                    <PrivateRoute path='/' exact auth={userLogged} component={Dashboard} />
+                    <PrivateRoute path='/todos' auth={userLogged} component={todosPage} />
                 </Switch>
             </BrowserRouter>
   }

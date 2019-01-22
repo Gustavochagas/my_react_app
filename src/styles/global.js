@@ -61,6 +61,30 @@ const GlobalStyles = createGlobalStyle`
       opacity: .7;
     }
   }
+  input {
+      background: #fff;
+      padding: 8px 20px;
+      border-radius: 5px;
+      border: 1px solid rgba(0,0,0,0.2);
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+  label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .row {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-md-4 {
+    width: 33.3333%;
+    padding: 0 15px;
+  }
 `;
 
 export default GlobalStyles;

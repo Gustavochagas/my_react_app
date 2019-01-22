@@ -9,22 +9,6 @@ const LoginStyles = createGlobalStyle`
     box-shadow: 1px 1px 5px 0px rgba(237,237,237,1);
     border-radius: 5px;
 
-    input {
-      background: #fff;
-      padding: 8px 20px;
-      border-radius: 5px;
-      border: 1px solid rgba(0,0,0,0.2);
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    label {
-      display: block;
-      width: 100%;
-      margin-bottom: 5px;
-      font-size: 14px;
-    }
-
     div {
       position: relative;
       padding: .75rem 1.25rem;
