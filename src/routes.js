@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
 
 import Dashboard from './components/dashboard';
+import Wordpress from './components/wordpress';
 import LoginPage from './pages/login';
 import todosPage from './pages/todos';
 
@@ -24,6 +25,7 @@ const Routes = props => {
                     )} />
                     <PrivateRoute path='/' exact auth={userLogged} component={Dashboard} />
                     <PrivateRoute path='/todos' auth={userLogged} component={todosPage} />
+                    <PrivateRoute path='/wordpress' auth={userLogged} component={Wordpress} />
                 </Switch>
             </BrowserRouter>
   }
