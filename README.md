@@ -12,7 +12,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `routes`
 
-/dashboard - My github infos
-/todos - CRUD integrated with Firebase
-/login - authentication with Firebase
-/wordpress - using wordpress API Rest
+/dashboard - My github infos <br>
+/todos - CRUD integrated with Firebase <br>
+/login - authentication with Firebase <br>
+/wordpress - using wordpress API Rest <br>
