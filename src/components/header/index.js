@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
 
 import 'font-awesome/css/font-awesome.css';
 
@@ -21,13 +22,13 @@ class Header extends Component {
                 <HeaderStyles />
                 <header className={this.state.click ? 'off' : 'on'}>
                     <h2 className="logo">Logo</h2>
-                    <ul>
-                        <li><a href=" "><i className="fa fa-home"></i> <span>Home</span></a></li>
-                        <li><a href=" "><i className="fa fa-github"></i> <span>Dashboard</span></a></li>
-                        <li className="active"><a href=" "><i className="fa fa-user-circle"></i> <span>About</span></a></li>
-                        <li><a href=" "><i className="fa fa-address-book"></i> <span>Test</span></a></li>
-                        <li><a href=" "><i className="fa fa-phone"></i> <span>Contact</span></a></li>
-                    </ul>
+                    <BrowserRouter>
+                        <ul>
+                            <li><Link to="/"><i className="fa fa-github"></i> <span>Home</span></Link></li>
+                            <li><Link to="/todos"><i className="fa fa-address-book"></i> <span>Todos</span></Link></li>
+                            <li><Link to="/wordpress"><i className="fa fa-phone"></i> <span>Wordpress</span></Link></li>
+                        </ul>
+                    </BrowserRouter>
 
                     <button className="navBarButton" onClick={this.navLess}><i className="fa fa-bars"></i></button>
                 </header>
