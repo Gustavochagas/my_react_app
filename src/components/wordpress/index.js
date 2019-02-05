@@ -32,6 +32,7 @@ class Wordpress extends Component {
                         {this.state.posts.map(item => (
                             <div className="post" key={item.id}>
                                 <h2>{item.title.rendered}</h2>
+                                <p>{item.date}</p>
                             </div>
                         ))}
                         </div>
